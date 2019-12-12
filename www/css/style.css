@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #B7CEEC; 
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.83rem;
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem 0.4rem 1rem 0.4rem;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+h2{
+    margin: 0 0 0.5rem 1rem;
+}
+section{
+    margin: 0.5rem 0 0.5rem 0;
+    padding-bottom:4rem;
+}
+/* menu principal */
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    bottom: 0;
+    position: fixed;
+    /* con left y transform los centro */
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+    .menu>ul{
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 0.1rem 0.1rem 0.1rem;
+        border: 0.09rem solid black;
+    }
+    .menu>ul>li{
+        display: flex;
+        list-style: none;
+        border-right: 0.1rem solid rgba(0, 0, 0, 0.4);
+        background: white;
+    }
+    .menu>ul>li:last-child{
+        border-right: none;
+    }
+    .menu>ul>li>a{
+        display: block;
+        text-decoration: none;
+        padding: 0 0.6rem;
+    }
+    .menu>ul>li>a>.icon{
+        min-width: 2rem;
+        max-width: 8rem;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        overflow: hidden;
+        margin: 0.2rem auto .8rem;
+    }
+    #achicarIcono{
+        width: 90%;
+        height: 95%;
+    }
+    #color{
+        filter: invert(51%) sepia(69%) saturate(3760%) hue-rotate(202deg) brightness(104%) contrast(106%);
+    }
+    .menu>ul> li> a>.name{
+        color: black;
+        text-align: center;
+    }
+    .menu>ul> li> a> .icon> .fas{
+        width: 100%;
+        height: 100%;
+    }
+/**/
+
+/* Formulario */
+.img{
+    width: 3rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    float: left;
+}
+#img{
+    filter: invert(51%) sepia(69%) saturate(3760%) hue-rotate(202deg) brightness(104%) contrast(106%);
+}
+
+form{
+    clear:both;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 2rem;
+    position:relative;
+}
+input{
+    max-width: 15rem;
+    height: 1.5rem;
+    margin-bottom:2rem ;
+}
+.form{
+    padding-bottom:4rem;
+}
+.form-control{
+    background: none;
+    border: 0;
+    border-bottom: 1px solid;
+    /* quito el sombreo al 'clickear' */
+    outline: 0; 
+}
+
+/* botones */
+button{
+    width:8rem;
+    height:2rem;
+}
+
+textarea {
+    width: 18.5rem;
+    height: 10rem;
+}
